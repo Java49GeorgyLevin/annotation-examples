@@ -3,15 +3,15 @@ package telran.configuration.example;
 import telran.configuration.annotation.Value;
 
 public class TestConfiguration {
-	@Value("10")
+	@Value("app.int:10")
 	int i;
-	@Value("10000000000")
+	@Value("app.long:1000000")
 	long l;
-	@Value("0.5")
+	@Value("app.float.:0.5")
 	float f;
-	@Value("10.5")
+	@Value("app.double:10.5")
 	double d;
-	@Value("abcd")
+	@Value("app.string")
 	String s;
 	@Override
 	public String toString() {
